@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Testing|Win32">
+      <Configuration>Testing</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Testing|x64">
+      <Configuration>Testing</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{15985fe5-0b43-469d-9f26-110bdf95350b}</ProjectGuid>
+    <RootNamespace>DiscoSynthesizerGUI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Testing|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Testing|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Testing|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Testing|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Workspaces\VS\Disco-Synthesizer-GUI\Model;C:\Workspaces\VS\Disco-Synthesizer-GUI\uGFX\drivers\multiple\Win32;C:\Workspaces\VS\Disco-Synthesizer-GUI\uGFX;C:\Workspaces\VS\Disco-Synthesizer-GUI\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Workspaces\VS\Disco-Synthesizer-GUI\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Testing|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Workspaces\VS\Disco-Synthesizer-GUI\Model;C:\Workspaces\VS\Disco-Synthesizer-GUI\uGFX\drivers\multiple\Win32;C:\Workspaces\VS\Disco-Synthesizer-GUI\uGFX;C:\Workspaces\VS\Disco-Synthesizer-GUI\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Workspaces\VS\Disco-Synthesizer-GUI\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Workspaces\VS\Disco-Synthesizer-GUI\uGFX\drivers\multiple\Win32;C:\Workspaces\VS\Disco-Synthesizer-GUI\Testing;C:\Workspaces\VS\Disco-Synthesizer-GUI\Model;C:\Workspaces\VS\Disco-Synthesizer-GUI\uGFX;C:\Workspaces\VS\Disco-Synthesizer-GUI\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Workspaces\VS\Disco-Synthesizer-GUI\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Testing|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Workspaces\VS\Disco-Synthesizer-GUI\uGFX\drivers\multiple\Win32;C:\Workspaces\VS\Disco-Synthesizer-GUI\Testing;C:\Workspaces\VS\Disco-Synthesizer-GUI\Model;C:\Workspaces\VS\Disco-Synthesizer-GUI\uGFX;C:\Workspaces\VS\Disco-Synthesizer-GUI\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Workspaces\VS\Disco-Synthesizer-GUI\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CMSIS-DSP.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Testing|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CMSIS-DSP.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CMSIS-DSP.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Testing|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>RUN_TESTS;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CMSIS-DSP.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Model\InputConverters.cpp" />
+    <ClCompile Include="Model\Inputs.cpp" />
+    <ClCompile Include="Model\Modules\AmplifierModule.cpp" />
+    <ClCompile Include="Model\Modules\Module.cpp" />
+    <ClCompile Include="Model\OutputBuffer.cpp" />
+    <ClCompile Include="Model\Patch.cpp" />
+    <ClCompile Include="Model\Utilities.cpp" />
+    <ClCompile Include="src\CppUTestExt\CodeMemoryReportFormatter.cpp" />
+    <ClCompile Include="src\CppUTestExt\IEEE754ExceptionsPlugin.cpp" />
+    <ClCompile Include="src\CppUTestExt\MemoryReportAllocator.cpp" />
+    <ClCompile Include="src\CppUTestExt\MemoryReporterPlugin.cpp" />
+    <ClCompile Include="src\CppUTestExt\MemoryReportFormatter.cpp" />
+    <ClCompile Include="src\CppUTestExt\MockActualCall.cpp" />
+    <ClCompile Include="src\CppUTestExt\MockExpectedCall.cpp" />
+    <ClCompile Include="src\CppUTestExt\MockExpectedCallsList.cpp" />
+    <ClCompile Include="src\CppUTestExt\MockFailure.cpp" />
+    <ClCompile Include="src\CppUTestExt\MockNamedValue.cpp" />
+    <ClCompile Include="src\CppUTestExt\MockSupport.cpp" />
+    <ClCompile Include="src\CppUTestExt\MockSupportPlugin.cpp" />
+    <ClCompile Include="src\CppUTestExt\MockSupport_c.cpp" />
+    <ClCompile Include="src\CppUTestExt\OrderedTest.cpp" />
+    <ClCompile Include="src\CppUTest\CommandLineArguments.cpp" />
+    <ClCompile Include="src\CppUTest\CommandLineTestRunner.cpp" />
+    <ClCompile Include="src\CppUTest\JUnitTestOutput.cpp" />
+    <ClCompile Include="src\CppUTest\MemoryLeakDetector.cpp" />
+    <ClCompile Include="src\CppUTest\MemoryLeakWarningPlugin.cpp" />
+    <ClCompile Include="src\CppUTest\SimpleMutex.cpp" />
+    <ClCompile Include="src\CppUTest\SimpleString.cpp" />
+    <ClCompile Include="src\CppUTest\TeamCityTestOutput.cpp" />
+    <ClCompile Include="src\CppUTest\TestFailure.cpp" />
+    <ClCompile Include="src\CppUTest\TestFilter.cpp" />
+    <ClCompile Include="src\CppUTest\TestHarness_c.cpp" />
+    <ClCompile Include="src\CppUTest\TestMemoryAllocator.cpp" />
+    <ClCompile Include="src\CppUTest\TestOutput.cpp" />
+    <ClCompile Include="src\CppUTest\TestPlugin.cpp" />
+    <ClCompile Include="src\CppUTest\TestRegistry.cpp" />
+    <ClCompile Include="src\CppUTest\TestResult.cpp" />
+    <ClCompile Include="src\CppUTest\TestTestingFixture.cpp" />
+    <ClCompile Include="src\CppUTest\Utest.cpp" />
+    <ClCompile Include="src\UtestPlatform.cpp" />
+    <ClCompile Include="Testing\stubs\InputStub.cpp" />
+    <ClCompile Include="Testing\TestingResources.cpp" />
+    <ClCompile Include="Testing\TestingUtils.cpp" />
+    <ClCompile Include="Testing\test_AmplifierModule.cpp" />
+    <ClCompile Include="Testing\test_CompilerAndAllThingsMeta.cpp" />
+    <ClCompile Include="Testing\test_InputConverters.cpp" />
+    <ClCompile Include="Testing\test_OutputBuffer.cpp" />
+    <ClCompile Include="Testing\test_Utilities.cpp" />
+    <ClCompile Include="uGFX\drivers\multiple\Win32\gdisp_lld_Win32.c" />
+    <ClCompile Include="uGFX\src\gfx_mk.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="uGFX\gfx.mk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model\Exceptions.h" />
+    <ClInclude Include="Model\InputConverters.h" />
+    <ClInclude Include="Model\Inputs.h" />
+    <ClInclude Include="Model\Modules\AmplifierModule.h" />
+    <ClInclude Include="Model\Modules\Module.h" />
+    <ClInclude Include="Model\OutputBuffer.h" />
+    <ClInclude Include="Model\Patch.h" />
+    <ClInclude Include="Model\SettingsMacros.h" />
+    <ClInclude Include="Model\Utilities.h" />
+    <ClInclude Include="Testing\stubs\InputStub.h" />
+    <ClInclude Include="Testing\TestingResources.h" />
+    <ClInclude Include="Testing\TestingUtils.h" />
+    <ClInclude Include="Testing\test_Module.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
